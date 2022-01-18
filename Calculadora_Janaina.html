@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: violet;
+            font-family: 'Franklin Gothic Medium',sans-serif;
+            font-size: medium;
+            font-style: italic;
+            color: azure;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <script language="Javascript">
+        function operacao(oper){
+            var a=eval(document.formcalc.t1.value);
+            var b=eval(document.formcalc.t2.value);
+            var c;
+    
+            if(oper=="somar"){
+                c=a+b;
+                alert("O resultado da operação é:"+c);
+            } 
+            else if(oper=="subtrair"){
+                c=a-b;
+                alert("O resultado da operação é:"+c);
+            } 
+            else if(oper=="mult"){
+                c=a*b;
+                alert("O resultado da operação é:"+c);
+            }
+            else{
+                c=a/b;
+                alert("O resultado da operação é:"+c);
+            }
+        }
+    </script>
+    </script>
+</head>
+<body>
+    <form name="formcalc">
+        <h3><center>Cálculo em JavaScript</h3>
+        Digite o primeiro número: <input type="text" name="t1" size="4" maxlenght="4">
+        <br><br>
+        Digite o segundo número: <input type="text" name="t2" size="4" maxlength="4">
+        <br><br><br>
+        <select name="oper" id="oper">
+            <option value="somar">+</option>
+            <option value="subtrair">-</option>
+            <option value="mult">*</option>
+            <option value="dividir">/</option>
+         </select>
+         <br><br><br>
+        <input type="button"name="bt1" value="Calcular" onclick="operacao(document.formcalc.oper.value)">
+        &nbsp&nbsp
+        <input type="reset"name="bt2" value="Cancelar" onclick="document.formcalc.t1.focus()">
+        &nbsp&nbsp
+        <input type="button"name="bt3" value="Fechar" onclick="window.close()"></center>
+    </form>      
+</body>
+</html>

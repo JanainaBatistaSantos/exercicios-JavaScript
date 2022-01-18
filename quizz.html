@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz do JavaScript</title>
+    <script language = "JavaScript">
+       function quem(){
+       var nome=window.prompt("Digite Seu Nome");
+       var email=window.prompt("Digite Seu Email","Email");
+       document.formquest.txtnome.value.value=nome.toUpperCase();
+       document.formquest.txtmail.value=email.toLowerCase();
+       document.formquest.txtnome.disable=true;
+       document.formquest.BTEVIAR.disable=true;
+       }
+       function verifica1(rec){
+           if (rec==1){
+           certos++;
+           window.status="Acertos "+ certos +" Erros "+ erros;
+           document.formquest.opt1.disable=true;
+           document.formquest.opt2.disable=true;}
+           else{
+           erros++;
+           window.status="Acertos "+ certos+ " Erros "+ erros;
+           document.formquest.opt1.disable=true;
+           document.formquest.opt2.disable=true;}
+       }
+       function verifica2(rec);{
+        if(rec==1)}
+        certos++
+        document.formquest.B1.disable=true;
+        document.formquest.B2.disable=true;
+        document.formquest.B3.disable=true;
+        document.formquest.B4.disable =true;
+        document.formquest.txtcertos.value=certos;
+        document.formquest.txterros.value=erros;
+        document.formquest.txtnome.disable=false;
+        document.formquest.txtmail.disable=false;
+        document.formquest.BTEVIAR.disable=false;}
+        else{
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
